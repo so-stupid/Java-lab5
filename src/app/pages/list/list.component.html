@@ -1,1 +1,21 @@
-<p>list works!</p>
+<app-large-card></app-large-card>
+<div class="container">
+  <div class="list-cont">
+    <ul class="list">
+      <li *ngFor="let todo of todos">
+        <div class="customBlock">
+        <span>
+        {{todo.label}}
+      </span>
+          <button type="button" class="btn btn-danger btn-sm"> Удалить</button>
+        </div>
+
+      </li>
+    </ul>
+    <div class="list">
+      <app-form></app-form>
+    </div>
+  </div>
+
+
+</div>
