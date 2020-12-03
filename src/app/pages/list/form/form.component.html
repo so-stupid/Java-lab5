@@ -1,0 +1,10 @@
+<div class="form-group">
+  <label for="new-item">Добавить новый элемент</label>
+  <input [formControl]="addItemForm" type="text" id="new-item" placeholder="Введите текст" class="form-control">
+</div>
+
+
+<button type="submit"
+        (click)="addItem(addItemForm)"
+        class="btn btn-outline-success">Добавить
+</button>
