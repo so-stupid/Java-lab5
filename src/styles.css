@@ -1,1 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
+.jumbotron{
+  margin-top: 2rem;
+  min-height: 350px;
+}
+
+.col-md-4 {
+  display: grid;
+}
+
+.btn {
+  margin: 5px;
+}
