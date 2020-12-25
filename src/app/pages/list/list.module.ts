@@ -5,7 +5,7 @@ import { ListRoutingModule } from './list-routing.module';
 import { ListComponent } from './list.component';
 import {CoreModule} from '../../core/core.module';
 import { FormComponent } from './form/form.component';
-import {ReactiveFormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 
 @NgModule({
@@ -14,7 +14,8 @@ import {ReactiveFormsModule} from '@angular/forms';
     CommonModule,
     ListRoutingModule,
     CoreModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule
   ]
 })
 export class ListModule { }

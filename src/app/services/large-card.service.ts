@@ -20,7 +20,7 @@ export class LargeCardService {
     this.head = value;
   }
 
-  setTail(value){
+  setTail(value) {
     this.tail = value;
   }
 

@@ -4,19 +4,23 @@ import { MenuComponent } from './menu/menu.component';
 import { LargeCardComponent } from './large-card/large-card.component';
 import {RouterModule} from '@angular/router';
 import { FooterComponent } from './footer/footer.component';
+import { InputFieldComponent } from './input-field/input-field.component';
+import {FormsModule} from '@angular/forms';
 
 
 
 @NgModule({
-    declarations: [MenuComponent, LargeCardComponent, FooterComponent],
+    declarations: [MenuComponent, LargeCardComponent, FooterComponent, InputFieldComponent],
     exports: [
         MenuComponent,
         LargeCardComponent,
-        FooterComponent
+        FooterComponent,
+        InputFieldComponent
     ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    FormsModule
   ]
 })
 export class CoreModule { }

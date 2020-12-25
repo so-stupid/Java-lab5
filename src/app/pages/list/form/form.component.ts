@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import {FormControl} from '@angular/forms';
 import {TodosService} from '../../../services/todos.service';
+import {Item} from '../classes/item';
 
 
 @Component({
@@ -9,12 +10,16 @@ import {TodosService} from '../../../services/todos.service';
   styleUrls: ['./form.component.css']
 })
 export class FormComponent {
+  public itemModel: Item;
 
   constructor(private todoService: TodosService) {
+    this.itemModel = new Item();
   }
-  addItemForm = new FormControl('');
-  public addItem(addItemForm: FormControl): boolean{
-    this.todoService.addTodo(addItemForm.value);
+
+  // addItemForm = new FormControl('');
+
+  public addItem(): boolean {
+    this.todoService.addTodo(this.itemModel.value);
     return false;
   }
 }

@@ -1,10 +1,16 @@
 <div class="form-group">
-  <label for="new-item">Добавить новый элемент</label>
-  <input [formControl]="addItemForm" type="text" id="new-item" placeholder="Введите текст" class="form-control">
+  <app-input-field
+    name="addItemForm"
+    placeholder="Введите текст"
+    [(ngModel)]="itemModel.value"
+    type="text"
+    required="required"
+    class="form-control"
+  ></app-input-field>
 </div>
 
 
 <button type="submit"
-        (click)="addItem(addItemForm)"
+        (click)="addItem()"
         class="btn btn-outline-success">Добавить
 </button>
